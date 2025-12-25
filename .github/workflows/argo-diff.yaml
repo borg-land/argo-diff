@@ -46,7 +46,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: diff-md
-          path: output/diff.md
+          path: output
       - name: Post diff as comment
         env:
           GH_TOKEN: ${{ secrets.BOT_TOKEN }}
